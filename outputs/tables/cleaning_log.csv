@@ -1,0 +1,9 @@
+step,rule,reason,rows_before,rows_after,rows_dropped,step_drop_pct,cumulative_drop_pct
+0,Raw Ingestion,Original unfiltered invoice rows,1067371,1067371,0,0.0,0.0
+1,Drop Null Customer ID,Interactions must belong to an identifiable customer,1067371,824364,243007,22.77,22.77
+2,Remove Cancellations & Non-positive Qty,Cancellations and returns are not purchases,824364,805620,18744,2.27,24.52
+3,Remove Price <= 0,Free or erroneous lines carry no buying intent,805620,805549,71,0.01,24.53
+4,Exclude Non-Product Codes,"Postage, fees and manual adjustments are not products",805549,802644,2905,0.36,24.8
+5,Drop Exact Duplicate Lines,Prevent double-counting of identical transaction lines,802644,776587,26057,3.25,27.24
+6,Cap Extreme Quantities (P99.9 = 576),Limit pull of extreme wholesale outliers on confidence weights,776587,776587,0,0.0,27.24
+7,Standardize Canonical Descriptions,Resolve inconsistencies in free-text product names,776587,776587,0,0.0,27.24

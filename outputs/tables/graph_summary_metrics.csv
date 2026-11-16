@@ -1,0 +1,14 @@
+metric,value
+Bipartite Vertices (Total),"10,474"
+Customer Vertices,"5,852"
+Product Vertices,"4,622"
+Bipartite Interaction Edges,"480,976"
+Connected Components,2
+Giant Component Vertices,"10,472"
+Giant Component Coverage (%),99.98%
+Top PageRank Product,WHITE HANGING HEART T-LIGHT HOLDER (85123A)
+Projected Co-Purchase Nodes,"1,183"
+Projected Co-Purchase Edges,"40,531"
+Product Communities Found,8
+Average Clustering Coefficient,0.7473
+Total Triangles,"1,527,187"

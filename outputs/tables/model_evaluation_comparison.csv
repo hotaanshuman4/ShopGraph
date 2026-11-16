@@ -1,0 +1,5 @@
+Model,Precision@10,Recall@10,NDCG@10,MAP@10,Catalog Coverage (%),Train Time (s),Personalized
+Popularity Baseline,0.0392,0.0114,0.0411,0.0154,1.73,0.03,No
+Shopping Basket Rules (FP-Growth),0.0651,0.0192,0.0711,0.031,8.94,0.92,Rule-based
+Graph Co-Purchase Recommender,0.0452,0.0134,0.0476,0.0184,4.22,0.65,Graph-based
+ALS Implicit Feedback (Tuned),0.0406,0.0138,0.0423,0.0165,40.24,4.48,Yes (Latent Factors)

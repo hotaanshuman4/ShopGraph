@@ -1,0 +1,25 @@
+# Data Files (Downloadable automatically via pipeline)
+data/
+*.zip
+*.xlsx
+*.parquet
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Matplotlib cache & logs
+outputs/logs/
+outputs/figures_b64.json
+mpl_cache/
+.mpl_cache/
+
+# Environments & OS metadata
+.venv/
+env/
+venv/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
